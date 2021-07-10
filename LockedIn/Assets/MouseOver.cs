@@ -1,52 +1,66 @@
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class MouseOver : MonoBehaviour
 {
-    static PlayerController player = null;
+    PlayerController player = null;
     Vector2 oldPlayerPosition = Vector2.zero;
-    [SerializeField] float outOfReachDistance = 4f;
 
+    [SerializeField] float outOfReachDistance = 4f;
     bool showingOutOfReach = false, showingHoverTooltip = false;
+    [SerializeField] string content, header;
+
+    Coroutine delayCoroutine;
+    float delayTooltipTime = 0.25f;
 
     void Awake()
     {
-        if (player == null)
-            player = FindObjectOfType<PlayerController>();
+        player = FindObjectOfType<PlayerController>();
     }
 
     private void OnMouseOver()
     {
-        Vector2 playerPosition = player.transform.position;
-        if (oldPlayerPosition.magnitude != playerPosition.magnitude)
-        {
-            oldPlayerPosition = player.transform.position;
-            if (Mathf.Abs(this.transform.position.magnitude - playerPosition.magnitude) < outOfReachDistance)
-            {
-                showingOutOfReach = false;
-                if (!showingHoverTooltip)
-                {
-                    showingHoverTooltip = true;
-                    Debug.Log("Hovering over: " + this.name);
-                }
-            }
-            else
-            {
-                showingHoverTooltip = false;
-                if (!showingOutOfReach)
-                {
-                    showingOutOfReach = true;
-                    Debug.Log("Out of reach");
-                }
-            }
-        }
+
+        if (delayCoroutine == null)
+            delayCoroutine = StartCoroutine(delay(player.transform.position));
+
     }
 
     private void OnMouseExit()
     {
+        if (delayCoroutine != null)
+        {
+            StopCoroutine(delayCoroutine);
+            delayCoroutine = null;
+        }
+
+        TooltipSystem.Hide();
         oldPlayerPosition = Vector2.zero;
         showingHoverTooltip = false;
         showingOutOfReach = false;
+    }
+
+    IEnumerator delay(Vector2 playerPosition)
+    {
+        yield return new WaitForSeconds(delayTooltipTime);
+        if (Mathf.Abs(this.transform.position.magnitude - playerPosition.magnitude) < outOfReachDistance)
+        {
+            showingOutOfReach = false;
+            if (!showingHoverTooltip)
+            {
+                TooltipSystem.Show(content, header);
+                showingHoverTooltip = true;
+            }
+        }
+        else
+        {
+            showingHoverTooltip = false;
+            if (!showingOutOfReach)
+            {
+                TooltipSystem.Show("I need to get closer", "Out of reach");
+                showingOutOfReach = true;
+            }
+        }
+        delayCoroutine = null;
     }
 }
