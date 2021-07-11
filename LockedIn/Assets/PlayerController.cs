@@ -9,6 +9,8 @@ public class PlayerController : MonoBehaviour
     float horizontalInput;
     Rigidbody2D rb;
 
+    float outOfReachDistance = 3.5f;
+
     void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
@@ -22,12 +24,20 @@ public class PlayerController : MonoBehaviour
         {
             Vector3 mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
             Vector2 mousePos2D = new Vector2(mousePos.x, mousePos.y);
-            if (Mathf.Abs(mousePos2D.magnitude - transform.position.magnitude) < 3f)
+
+            var distanceVector = mousePos2D - (Vector2) this.transform.position;
+            if (distanceVector.sqrMagnitude < outOfReachDistance * outOfReachDistance)
             {
                 RaycastHit2D hit = Physics2D.Raycast(mousePos2D, Vector2.zero);
                 if (hit.collider != null)
                 {
                     Debug.Log(hit.collider.gameObject.name);
+                    Interaction interaction = hit.collider.gameObject.GetComponent<Interaction>();
+                    if (interaction != null)
+                    {
+                        interaction.Click();
+                    }
+                    
                 }
             }
         }

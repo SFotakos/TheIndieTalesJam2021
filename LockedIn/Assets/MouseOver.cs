@@ -1,16 +1,11 @@
-using System.Collections;
 using UnityEngine;
 
 public class MouseOver : MonoBehaviour
 {
     PlayerController player = null;
 
-    float outOfReachDistance = 4f;
+    float outOfReachDistance = 3.5f;
     bool showingOutOfReach = false, showingHoverTooltip = false;
-    [SerializeField] string content, header;
-
-    Coroutine delayCoroutine;
-    float delayTooltipTime = 0.25f;
 
     void Awake()
     {
@@ -19,34 +14,17 @@ public class MouseOver : MonoBehaviour
 
     private void OnMouseOver()
     {
+        Vector3 mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+        Vector2 mousePos2D = new Vector2(mousePos.x, mousePos.y);
 
-        if (delayCoroutine == null)
-            delayCoroutine = StartCoroutine(delay(player.transform.position));
+        var distanceVector = (Vector2) player.transform.position - mousePos2D;
 
-    }
-
-    private void OnMouseExit()
-    {
-        if (delayCoroutine != null)
-        {
-            StopCoroutine(delayCoroutine);
-            delayCoroutine = null;
-        }
-
-        TooltipSystem.Hide();
-        showingHoverTooltip = false;
-        showingOutOfReach = false;
-    }
-
-    IEnumerator delay(Vector2 playerPosition)
-    {
-        yield return new WaitForSeconds(delayTooltipTime);
-        if (Mathf.Abs(this.transform.position.magnitude - playerPosition.magnitude) < outOfReachDistance)
+        if (distanceVector.sqrMagnitude < outOfReachDistance * outOfReachDistance)
         {
             showingOutOfReach = false;
             if (!showingHoverTooltip)
             {
-                TooltipSystem.Show(content, header);
+                TooltipSystem.Hide();
                 showingHoverTooltip = true;
             }
         }
@@ -59,6 +37,12 @@ public class MouseOver : MonoBehaviour
                 showingOutOfReach = true;
             }
         }
-        delayCoroutine = null;
+    }
+
+    private void OnMouseExit()
+    {
+        TooltipSystem.Hide();
+        showingHoverTooltip = false;
+        showingOutOfReach = false;
     }
 }
