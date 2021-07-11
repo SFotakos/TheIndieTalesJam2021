@@ -4,9 +4,8 @@ using UnityEngine;
 public class MouseOver : MonoBehaviour
 {
     PlayerController player = null;
-    Vector2 oldPlayerPosition = Vector2.zero;
 
-    [SerializeField] float outOfReachDistance = 4f;
+    float outOfReachDistance = 4f;
     bool showingOutOfReach = false, showingHoverTooltip = false;
     [SerializeField] string content, header;
 
@@ -35,7 +34,6 @@ public class MouseOver : MonoBehaviour
         }
 
         TooltipSystem.Hide();
-        oldPlayerPosition = Vector2.zero;
         showingHoverTooltip = false;
         showingOutOfReach = false;
     }
