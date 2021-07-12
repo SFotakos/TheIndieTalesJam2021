@@ -7,9 +7,12 @@ public class MouseOver : MonoBehaviour
     float outOfReachDistance = 3.5f;
     bool showingOutOfReach = false, showingHoverTooltip = false;
 
+    bool englishSelected = false;
+
     void Awake()
     {
         player = FindObjectOfType<PlayerController>();
+        englishSelected = Application.systemLanguage == SystemLanguage.English;
     }
 
     private void OnMouseOver()
@@ -33,7 +36,10 @@ public class MouseOver : MonoBehaviour
             showingHoverTooltip = false;
             if (!showingOutOfReach)
             {
-                TooltipSystem.Show("I need to get closer", "Out of reach");
+                if (englishSelected)    
+                    TooltipSystem.Show("I need to get closer.", "Out of reach");
+                else
+                    TooltipSystem.Show("Preciso chegar mais perto.", "Fora de alcance");
                 showingOutOfReach = true;
             }
         }

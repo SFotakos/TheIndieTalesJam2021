@@ -10,55 +10,142 @@ TextureImporter:
     second: Couch
   - first:
       213: -447374973705032525
-    second: Bookshelf
+    second: Crookedpainting
   - first:
       213: -4588310281082425137
-    second: Curtains
+    second: Bookshelf
   - first:
       213: 2686707739961507840
-    second: LargePainting
+    second: Curtains
   - first:
       213: 3852667371987946981
-    second: Table
+    second: LargePainting
   - first:
       213: -7341157046516903519
-    second: Character
+    second: Windows
   - first:
       213: -1309888024749412495
-    second: Cabinet
+    second: Table
   - first:
       213: 4228694913784056407
-    second: Window
+    second: LargeVase
   - first:
       213: -5744414293972287443
-    second: LargeFlower
+    second: Cabinet
   - first:
       213: 4525456401454757224
-    second: Lightswitch
+    second: Player
   - first:
       213: -1853680280569242119
-    second: Door
-  - first:
-      213: -3672213893687288558
-    second: SmallFlower
-  - first:
-      213: -8483053866084999800
     second: Vent
   - first:
-      213: -7494841694476870132
+      213: -3672213893687288558
     second: Phone
   - first:
+      213: -8483053866084999800
+    second: Door
+  - first:
+      213: -7494841694476870132
+    second: SmallVase
+  - first:
       213: -3161308006810539581
-    second: SmallPainting
+    second: Phone
   - first:
       213: -5871627480394489219
     second: LockedInArt 1_16
   - first:
       213: -8730487348817566095
-    second: Shelf
+    second: Vent
   - first:
       213: 2691369310686798245
-    second: Floor
+    second: Safe
+  - first:
+      213: 5153605118385549519
+    second: Safe
+  - first:
+      213: -2897233134713099116
+    second: Player
+  - first:
+      213: 4995026699891524550
+    second: LockedInArt_0
+  - first:
+      213: -3358279979596847192
+    second: LockedInArt_1
+  - first:
+      213: -4573285174105681992
+    second: LockedInArt_2
+  - first:
+      213: 5795370058152503488
+    second: LockedInArt_3
+  - first:
+      213: 2227571411415443680
+    second: LockedInArt_4
+  - first:
+      213: -2591614354466055519
+    second: LockedInArt_5
+  - first:
+      213: 5953787834366236048
+    second: LockedInArt_6
+  - first:
+      213: 4670545648120893718
+    second: LockedInArt_7
+  - first:
+      213: 3201395829541623059
+    second: LockedInArt_8
+  - first:
+      213: 6399072954159784462
+    second: LockedInArt_9
+  - first:
+      213: -4544680824761885199
+    second: LockedInArt_10
+  - first:
+      213: 6752258302726184554
+    second: LockedInArt_11
+  - first:
+      213: 7171095387832413324
+    second: LockedInArt_12
+  - first:
+      213: 6090233218262106607
+    second: LockedInArt_13
+  - first:
+      213: -483359308485259440
+    second: LockedInArt_14
+  - first:
+      213: 3848800552291439205
+    second: LockedInArt_15
+  - first:
+      213: -1478793309180032381
+    second: LockedInArt_16
+  - first:
+      213: -5302924538573038876
+    second: LockedInArt_17
+  - first:
+      213: -4753675996779747930
+    second: LockedInArt_18
+  - first:
+      213: 3654232790321149781
+    second: LockedInArt_19
+  - first:
+      213: 9192386798797295116
+    second: LockedInArt_20
+  - first:
+      213: 285554073161077874
+    second: LockedInArt_21
+  - first:
+      213: 2178405856199661721
+    second: LockedInArt_22
+  - first:
+      213: -3517301992474578156
+    second: LockedInArt_23
+  - first:
+      213: 5029786975956167230
+    second: LockedInArt_24
+  - first:
+      213: 4877871280162632344
+    second: LockedInArt_25
+  - first:
+      213: -3044416556568808612
+    second: LockedInArt_26
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -160,11 +247,11 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Wall
+      name: LockedInArt_0
       rect:
         serializedVersion: 2
-        x: 4
-        y: 14
+        x: 8
+        y: 28
         width: 280
         height: 108
       alignment: 0
@@ -174,18 +261,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 031aa355f329338d0800000000000000
-      internalID: -2867787736994373328
+      spriteID: 6c340aa9156e15540800000000000000
+      internalID: 4995026699891524550
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Couch
+      name: LockedInArt_1
       rect:
         serializedVersion: 2
-        x: 290
-        y: 90
+        x: 304
+        y: 104
         width: 62
         height: 32
       alignment: 0
@@ -195,18 +282,39 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 164256f0c284cdc70800000000000000
-      internalID: 8997145509653455969
+      spriteID: 8a7e2d7c62ef461d0800000000000000
+      internalID: -3358279979596847192
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Bookshelf
+      name: LockedInArt_2
       rect:
         serializedVersion: 2
-        x: 358
-        y: 69
+        x: 382
+        y: 107
+        width: 55
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8bfcedc4d5d6880c0800000000000000
+      internalID: -4573285174105681992
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LockedInArt_3
+      rect:
+        serializedVersion: 2
+        x: 453
+        y: 83
         width: 28
         height: 53
       alignment: 0
@@ -216,18 +324,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3bc69eae4da9ac9f0800000000000000
-      internalID: -447374973705032525
+      spriteID: 0c86d1adc5a4d6050800000000000000
+      internalID: 5795370058152503488
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Curtains
+      name: LockedInArt_4
       rect:
         serializedVersion: 2
-        x: 392
-        y: 92
+        x: 497
+        y: 106
         width: 41
         height: 30
       alignment: 0
@@ -237,60 +345,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fc03fc8fb1c0350c0800000000000000
-      internalID: -4588310281082425137
+      spriteID: 0e8ab31856ce9ee10800000000000000
+      internalID: 2227571411415443680
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: LargePainting
+      name: LockedInArt_5
       rect:
         serializedVersion: 2
-        x: 439
-        y: 104
-        width: 52
-        height: 18
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 000c2b7647a194520800000000000000
-      internalID: 2686707739961507840
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Table
-      rect:
-        serializedVersion: 2
-        x: 497
-        y: 101
-        width: 35
-        height: 21
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 5ed4411009c677530800000000000000
-      internalID: 3852667371987946981
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Character
-      rect:
-        serializedVersion: 2
-        x: 538
-        y: 83
+        x: 554
+        y: 97
         width: 13
         height: 39
       alignment: 0
@@ -300,18 +366,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1a11102bf88fe1a90800000000000000
-      internalID: -7341157046516903519
+      spriteID: 1aa5f3fb97cb80cd0800000000000000
+      internalID: -2591614354466055519
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Cabinet
+      name: LockedInArt_6
       rect:
         serializedVersion: 2
-        x: 439
-        y: 79
+        x: 304
+        y: 69
         width: 36
         height: 19
       alignment: 0
@@ -321,39 +387,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 17fe54518c752dde0800000000000000
-      internalID: -1309888024749412495
+      spriteID: 0951177ad7a10a250800000000000000
+      internalID: 5953787834366236048
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Window
+      name: LockedInArt_7
       rect:
         serializedVersion: 2
-        x: 481
-        y: 72
-        width: 23
-        height: 23
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 75a89979e975faa30800000000000000
-      internalID: 4228694913784056407
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: LargeFlower
-      rect:
-        serializedVersion: 2
-        x: 510
-        y: 68
+        x: 356
+        y: 61
         width: 17
         height: 27
       alignment: 0
@@ -363,20 +408,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d200b1582adb740b0800000000000000
-      internalID: -5744414293972287443
+      spriteID: 6111e77758c11d040800000000000000
+      internalID: 4670545648120893718
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Lightswitch
+      name: LockedInArt_8
       rect:
         serializedVersion: 2
-        x: 533
-        y: 91
-        width: 5
-        height: 4
+        x: 382
+        y: 39
+        width: 18
+        height: 52
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -384,18 +429,60 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8657a37ce96adce30800000000000000
-      internalID: 4525456401454757224
+      spriteID: 315de359b84ad6c20800000000000000
+      internalID: 3201395829541623059
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Door
+      name: LockedInArt_9
       rect:
         serializedVersion: 2
-        x: 290
-        y: 39
+        x: 416
+        y: 68
+        width: 23
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e02e084b2f21ec850800000000000000
+      internalID: 6399072954159784462
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LockedInArt_10
+      rect:
+        serializedVersion: 2
+        x: 497
+        y: 69
+        width: 35
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1fdd98e5edc0ee0c0800000000000000
+      internalID: -4544680824761885199
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LockedInArt_11
+      rect:
+        serializedVersion: 2
+        x: 548
+        y: 36
         width: 6
         height: 45
       alignment: 0
@@ -405,18 +492,39 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9fd16852b976646e0800000000000000
-      internalID: -1853680280569242119
+      spriteID: a6e1dadb627d4bd50800000000000000
+      internalID: 6752258302726184554
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SmallFlower
+      name: LockedInArt_12
       rect:
         serializedVersion: 2
-        x: 302
-        y: 64
+        x: 304
+        y: 45
+        width: 13
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c8c613ad249d48360800000000000000
+      internalID: 7171095387832413324
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LockedInArt_13
+      rect:
+        serializedVersion: 2
+        x: 333
+        y: 33
         width: 12
         height: 20
       alignment: 0
@@ -426,20 +534,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 21dd38f7beca90dc0800000000000000
-      internalID: -3672213893687288558
+      spriteID: fe10cc538dad48450800000000000000
+      internalID: 6090233218262106607
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Vent
+      name: LockedInArt_14
       rect:
         serializedVersion: 2
-        x: 320
-        y: 75
-        width: 14
-        height: 9
+        x: 416
+        y: 40
+        width: 11
+        height: 12
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -447,39 +555,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 88ddf753473264a80800000000000000
-      internalID: -8483053866084999800
+      spriteID: 05f8bd61543ca49f0800000000000000
+      internalID: -483359308485259440
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Phone
+      name: LockedInArt_15
       rect:
         serializedVersion: 2
-        x: 340
-        y: 73
-        width: 7
-        height: 11
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: c0e5be03039fcf790800000000000000
-      internalID: -7494841694476870132
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: SmallPainting
-      rect:
-        serializedVersion: 2
-        x: 392
-        y: 68
+        x: 455
+        y: 49
         width: 21
         height: 18
       alignment: 0
@@ -489,18 +576,60 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3c9a57cfd17c024d0800000000000000
-      internalID: -3161308006810539581
+      spriteID: 56298a2e5bfa96530800000000000000
+      internalID: 3848800552291439205
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: LockedInArt 1_16
+      name: LockedInArt_16
       rect:
         serializedVersion: 2
-        x: 419
-        y: 78
+        x: 492
+        y: 39
+        width: 15
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 38a891ef1554a7be0800000000000000
+      internalID: -1478793309180032381
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LockedInArt_17
+      rect:
+        serializedVersion: 2
+        x: 523
+        y: 39
+        width: 15
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4ead6af6a3a3866b0800000000000000
+      internalID: -5302924538573038876
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LockedInArt_18
+      rect:
+        serializedVersion: 2
+        x: 304
+        y: 30
         width: 13
         height: 8
       alignment: 0
@@ -510,20 +639,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d722aa17ae9c38ea0800000000000000
-      internalID: -5871627480394489219
+      spriteID: 6a564a2fddc870eb0800000000000000
+      internalID: -4753675996779747930
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Shelf
+      name: LockedInArt_19
       rect:
         serializedVersion: 2
-        x: 419
-        y: 63
-        width: 13
-        height: 8
+        x: 361
+        y: 33
+        width: 11
+        height: 12
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -531,18 +660,144 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 176efa9230417d680800000000000000
-      internalID: -8730487348817566095
+      spriteID: 5573da1ac5176b230800000000000000
+      internalID: 3654232790321149781
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Floor
+      name: LockedInArt_20
       rect:
         serializedVersion: 2
-        x: 4
-        y: 0
+        x: 388
+        y: 14
+        width: 14
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c0e8d44171be19f70800000000000000
+      internalID: 9192386798797295116
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LockedInArt_21
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 15
+        width: 14
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2749ee6aaed76f300800000000000000
+      internalID: 285554073161077874
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LockedInArt_22
+      rect:
+        serializedVersion: 2
+        x: 443
+        y: 21
+        width: 11
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9985963a5904b3e10800000000000000
+      internalID: 2178405856199661721
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LockedInArt_23
+      rect:
+        serializedVersion: 2
+        x: 470
+        y: 21
+        width: 11
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 41377ca2978003fc0800000000000000
+      internalID: -3517301992474578156
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LockedInArt_24
+      rect:
+        serializedVersion: 2
+        x: 497
+        y: 12
+        width: 7
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e3ae0cd0b946dc540800000000000000
+      internalID: 5029786975956167230
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LockedInArt_25
+      rect:
+        serializedVersion: 2
+        x: 520
+        y: 19
+        width: 5
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8927c22d51ea1b340800000000000000
+      internalID: 4877871280162632344
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LockedInArt_26
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 4
         width: 280
         height: 8
       alignment: 0
@@ -552,8 +807,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5a1efdae02aa95520800000000000000
-      internalID: 2691369310686798245
+      spriteID: c53f565954f00c5d0800000000000000
+      internalID: -3044416556568808612
       vertices: []
       indices: 
       edges: []

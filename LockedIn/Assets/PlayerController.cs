@@ -11,6 +11,8 @@ public class PlayerController : MonoBehaviour
 
     float outOfReachDistance = 3.5f;
 
+    public bool facingLeft;
+
     void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
@@ -19,6 +21,13 @@ public class PlayerController : MonoBehaviour
     void Update()
     {
         horizontalInput = Input.GetAxis("Horizontal");
+        if ((horizontalInput < 0 && facingLeft) || (horizontalInput > 0 && !facingLeft))
+        {
+            facingLeft = !facingLeft;
+            Vector3 theScale = transform.localScale;
+            theScale.x *= -1;
+            transform.localScale = theScale;
+        }
 
         if (Input.GetMouseButtonDown(0))
         {
@@ -36,8 +45,7 @@ public class PlayerController : MonoBehaviour
                     if (interaction != null)
                     {
                         interaction.Click();
-                    }
-                    
+                    }                    
                 }
             }
         }
