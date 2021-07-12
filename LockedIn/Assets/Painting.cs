@@ -23,5 +23,8 @@ public class Painting : MonoBehaviour
         transform.position = new Vector2(5.48f, -2.35f);
         paintingRenderer.sprite = removedSprite;
         paintingCollider.enabled = false;
+
+        Safe safe = FindObjectOfType<Safe>();
+        safe.safeCollider.enabled = true;
     }
 }

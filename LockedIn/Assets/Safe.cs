@@ -8,11 +8,14 @@ public class Safe : MonoBehaviour
     [SerializeField] Sprite openStateSprite;
 
     SpriteRenderer spriteRenderer;
+    public BoxCollider2D safeCollider;
 
     private void Start()
     {
         GameController gameController = FindObjectOfType<GameController>();
         gameController.AddCallback(24, Unlock);
+
+        safeCollider = GetComponent<BoxCollider2D>();
     }
 
     private void Awake()

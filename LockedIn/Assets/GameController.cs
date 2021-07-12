@@ -1,4 +1,5 @@
 using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -10,6 +11,8 @@ public class GameController : MonoBehaviour
 
     string[] availableLanguages = { "english", "portuguese" };
     List<Tuple<string, string[]>> availableLanguagesLines = new List<Tuple<string, string[]>>();
+
+    [SerializeField] GameObject winScreen;
 
     string[] englishLines =
     {
@@ -170,6 +173,9 @@ public class GameController : MonoBehaviour
             {
                 line.callback = FoundNote;
             }
+            if (line.id == 26)
+                line.callback = OpenedDoor;
+
             interactionLines.Add(line);
         }
 
@@ -226,5 +232,16 @@ public class GameController : MonoBehaviour
             interactionLines[10].hasBeenRead = true;
             interactionLines[11].hasBeenRead = true;
         }
+    }
+
+    public void OpenedDoor()
+    {
+        StartCoroutine(OpenDoorAfterDelay());
+    }
+
+    IEnumerator OpenDoorAfterDelay()
+    {
+        yield return new WaitForSeconds(1.5f);
+        winScreen.SetActive(true);
     }
 }
