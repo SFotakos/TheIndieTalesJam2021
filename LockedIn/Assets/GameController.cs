@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 
 public class GameController : MonoBehaviour
 {
-    bool selectedEnglish = true;
+    bool selectedPortuguese = true;
     List<Line> interactionLines = new List<Line>();
 
     string[] availableLanguages = { "english", "portuguese" };
@@ -162,9 +162,9 @@ public class GameController : MonoBehaviour
         availableLanguagesLines.Add(new Tuple<string, string[]>(availableLanguages[0], englishLines));
         availableLanguagesLines.Add(new Tuple<string, string[]>(availableLanguages[1], portugueseLines));
 
-        selectedEnglish = Application.systemLanguage == SystemLanguage.English;
+        selectedPortuguese = Application.systemLanguage == SystemLanguage.Portuguese;
 
-         string[] selectedLanguage = selectedEnglish ? availableLanguagesLines[0].Item2 : availableLanguagesLines[1].Item2;
+         string[] selectedLanguage = selectedPortuguese ? availableLanguagesLines[1].Item2 : availableLanguagesLines[0].Item2;
 
         for (int i = 0; i < selectedLanguage.Length; i++)
         {
